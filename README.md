@@ -1,23 +1,21 @@
 PSExcel
 =======
-
 This is a powershell script to get values from excel file.
 
-------------------------------------------------------------------
-NAME
-	Get-Sheet
 
-SYNOPSIS
-	Gets the sheets in Excel file.
+Get-Sheet
+---------
+The Get-Sheet cmdlet gets the sheets in Excel file by using COM Automation.
+EXCEL.EXE process will create with cmdlet is executed, and quit.  
+
 
 SYNTAX
+
 	Get-Sheet [-File] <System.IO.FileInfo[]> [-Visible]
 
-DESCRIPTION
-	The Get-Sheet cmdlet gets the sheets in excel file by using COM Automation.
-	excel.exe process will create with cmdlet is executed, and quit.
 
 PARAMETERS
+
 	-File <System.IO.FileInfo[]>
 		Specifies a Excel file path or FileInfo object.
 		This parameter can take values from incoming pipeline objects.
@@ -25,25 +23,20 @@ PARAMETERS
 	-Visible <SwitchParameter>
 		Determines whether the Excel application is visible.
 
-RELATED LINKS
-	Get-Range
 
+Get-Range
+---------
+The Get-Sheet cmdlet gets the sheets in excel file by using COM Automation.
+excel.exe process will create with cmdlet is executed, and quit.
 
-------------------------------------------------------------------
-NAME
-	Get-Range
-
-SYNOPSIS
-	Gets the values of range in Excel sheet.
 
 SYNTAX
+
 	Get-Range [-Sheet] <__ComObject> [-Range] <string> [-IncludeSheetName] [-HeaderRow <int>]
 
-DESCRIPTION
-	The Get-Sheet cmdlet gets the sheets in excel file by using COM Automation.
-	excel.exe process will create with cmdlet is executed, and quit.
 
 PARAMETERS
+
 	-Sheet
 		Specifies a Excel sheet object.
 		This parameter can take values from incoming pipeline objects.
@@ -57,6 +50,3 @@ PARAMETERS
 
 	-HeaderRow
 		Specifies a row number of headers, which is the property name of the retrieved data.
-
-RELATED LINKS
-	Get-Sheet
