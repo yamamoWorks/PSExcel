@@ -5,20 +5,18 @@ This is a powershell script to get values from excel file.
 
 Get-Sheet
 ---------
-The Get-Sheet cmdlet gets the sheets in Excel file by using COM Automation.
-EXCEL.EXE process will create with cmdlet is executed, and quit.  
+Retrieve sheets from files that can be opened with Excel.
 
 
 SYNTAX
 
-	Get-Sheet [-File] <System.IO.FileInfo[]> [-Visible]
+	Get-Sheet [-File] <FileInfo> [-Visible] [<CommonParameters>]
 
 
 PARAMETERS
 
-	-File <System.IO.FileInfo[]>
+	-File <System.IO.FileInfo>
 		Specifies a Excel file path or FileInfo object.
-		This parameter can take values from incoming pipeline objects.
 
 	-Visible <SwitchParameter>
 		Determines whether the Excel application is visible.
@@ -26,8 +24,7 @@ PARAMETERS
 
 Get-Range
 ---------
-The Get-Sheet cmdlet gets the sheets in excel file by using COM Automation.
-excel.exe process will create with cmdlet is executed, and quit.
+Gets values of specified range from Excel sheets.
 
 
 SYNTAX
