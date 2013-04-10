@@ -51,4 +51,4 @@ PARAMETERS
 
 ###Example###
 
-	Get-ChildItem "*.xls" | Get-Sheet | ?{ $_.Name -eq "Sheet1" } | Get-Range "A1:C5,E1:F5"
+	Get-ChildItem "*.xls" | Get-Sheet | ?{ $_.Name -eq "Sheet1" } | Get-Range "A1:C5,E1:F5" | Format-Table
