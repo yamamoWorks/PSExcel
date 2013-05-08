@@ -137,7 +137,7 @@ function Get-Range
                 $value = $area.Value()
             }
 
-            if($area.Row -lt $lastRowOfSheet)
+            if($area.Row -le $lastRowOfSheet)
             {
                 $firstRow = $area.Row
                 $lastRow = [Math]::Min($firstRow + $area.Rows.Count - 1, $lastRowOfSheet)
