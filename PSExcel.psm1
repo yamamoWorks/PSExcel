@@ -89,7 +89,7 @@ function Get-Range
     Specifies a row number of headers, which is the property name of the retrieved data.
 
     .INPUTS
-    __ComObject (Worksheet Object from Get-Sheet cmdlet)
+    object (Worksheet Object from Get-Sheet cmdlet)
 
     .OUTPUTS
     PSObject
@@ -102,7 +102,7 @@ function Get-Range
     #>
     param(
         [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [__ComObject] $Sheet,
+        [object] $Sheet,
         [Parameter(Mandatory=$true, Position=1)]
         [string] $Range,
         [Parameter(Mandatory=$false)]
